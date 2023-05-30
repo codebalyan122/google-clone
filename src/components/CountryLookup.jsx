@@ -22,7 +22,7 @@ export default function CountryLookup() {
   return (
     <div>
       {loading ? (
-        <img src="spinner.svg" className="h-6 w-6" alt="loading" />
+        <img src="/spinner.svg" className="h-6 w-6" alt="loading" />
       ) : (
         country
       )}

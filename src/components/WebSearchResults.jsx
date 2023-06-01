@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 import parse from "html-react-parser";
 export default function WebSearchResults({ results }) {
-  console.log(results.items);
   return (
     <div className="w-full mx-auto px-3 pb-24 sm:pl-[5%] md:pl-[14%] lg:pl[52%] ">
       <p className="text-gray-600 text-sm mb-5 mt-3 ">

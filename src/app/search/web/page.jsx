@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 export default async function WebSearchPage({ searchParams }) {
-  await new Promise((resolve) => setTimeout(resolve, 10000));
+  await new Promise((resolve) => setTimeout(resolve, 5000));
   const resposne = await fetch(
     `https://www.googleapis.com/customsearch/v1?key=${process.env.GOOGLE_SEARCH_KEY}&cx=${process.env.GOOGLE_CONTEXT_KEY}&q=${searchParams.searchTerm}`
   );

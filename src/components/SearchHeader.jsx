@@ -18,6 +18,8 @@ export default function SearchHeader() {
             width={120}
             height={40}
             alt="Google"
+            style={{ height: "auto", width: "auto" }}
+            priority
           />
         </Link>
         <div className="flex-1">

@@ -1,10 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import PaginationButtons from "./PaginationButtons";
 
-export default function ImageSearchResult({ results }) {
+export default function   ImageSearchResult({ results }) {
   return (
-    <div className="pb-24 mt-24">
+    <div className="pb-40 sm:pb-24 mt-24">
       <div className="grid grid:cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  px-3 space-x-4">
         {results.items?.map((result) => {
           return (
@@ -31,6 +31,9 @@ export default function ImageSearchResult({ results }) {
             </div>
           );
         })}
+      </div>
+      <div className="ml-16">
+        <PaginationButtons />
       </div>
     </div>
   );
